@@ -65,7 +65,9 @@ async def feedback_endpoint(request: FeedbackRequest):
 @app.get("/")
 def read_root():
     return {"status": "success", "message": "API funcionando"}
-
+@app.get("/test")
+def test_endpoint():
+    return {"status": "success", "message": "API funcionando"}
 # Este bloque es necesario para Render
 if __name__ == "__main__":
     import uvicorn
