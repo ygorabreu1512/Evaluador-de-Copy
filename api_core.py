@@ -12,7 +12,7 @@ from reportlab.lib.units import inch
 import os
 
 # Configuración desde variables de entorno
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "sk-b548565594984101afa3ba4b478760c7")
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 class CopyEvaluatorAPI:
     def __init__(self):
